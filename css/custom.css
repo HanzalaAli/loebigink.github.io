@@ -1,0 +1,629 @@
+@charset "utf-8";
+/* CSS Document */
+body, html{
+	height: 100%;
+    scroll-behavior: smooth;
+}
+body{
+	background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 72px;
+    color: #fff;
+    font-weight: 800;
+}
+h2{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    max-width: 90%;
+}
+p{
+	font-size: 16px;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6, p, a, ul, li{
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a {
+	text-decoration: none !important;
+	transition: all 0.5s;
+}
+.carousel-item img {
+    width: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+div#navbarCollapse {
+    flex-direction: row-reverse;
+}
+
+/* BANNER  */
+.banner{
+    background-image: url(../images/banner-bg.png);
+    width: 100%;
+    min-height: 950px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.banner .b-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px;
+}
+.b-scroll a {
+    display: flex;
+    align-items: baseline;
+    color: #fff;
+    font-size: 24px;
+}
+.b-scroll a h6{
+    font-size: 24px;
+    margin-left: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* BANNER END */
+
+/* HEADER  */
+header {
+    padding: 20px 0;
+}
+header .navbar-brand img {
+    max-width: 260px;
+}
+header .nav-item {
+    margin-right: 10px;
+}
+header .nav-link {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header .nav-link:hover{
+    color: #04bbee;
+}
+/* HEADER END */
+
+/* SLOGAN  */
+.slogan{
+    background-color: #1d252c;
+    width: 100%;
+    padding: 100px 0;
+}
+.slogan h1{
+    color: #04bbee;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+.slogan p{color: #fff;  margin-top: 40px;}
+.slogan-slider img {
+    margin: 0 auto;
+}
+.slogan-slider .slick-dots li button{
+    background:#cccccc ;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+.slogan-slider .slick-dots .slick-active button{background: #04bbee;}
+.slogan-slider .slick-dots {bottom: -55px;}
+.slogan-slider .slick-dots li button:before{content: none;}
+/* SLOGAN END */
+
+/* STEPS  */
+.steps{
+    padding: 100px 0;
+}
+.step-txt{
+    position: relative;
+}
+.steps .step-txt h1{
+    color: #04bbee;
+    margin-bottom: 40px;
+}
+.steps .step-txt  h5{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 35px;
+ }
+ .step-txt p {
+    margin-top: 20px;
+ }
+ .step-txt p span{
+    color: #04bbee;
+ }
+ .step-txt .service-head h4{
+    font-size: 300px;
+    color: #cccccc;
+    font-weight: 900;
+ }
+ .step-txt .service-head {
+    position: absolute;
+    left: -300px;
+    bottom: -200px;
+    z-index: -1;
+    opacity: 0.5;
+}
+/* STEPS END */
+
+/* SERVICE CARDS  */
+section.s-cards {
+    padding: 70px 0;
+}
+.container-fluid {
+    max-width: 1800px;
+}
+
+.s-desc {
+    text-align: right;
+    padding:0 60px;
+}
+.s-cards .row:nth-child(2) .s-desc{
+    text-align: left;
+}
+.s-desc h3 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #323e48;
+}
+.s-desc a{
+    color: #04bbee;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+}
+.s-desc a:hover{color: #101820;}
+.s-img img{width: 100%;}
+.s-desc p {
+    max-width: 60%;
+    float: right;
+    display: inline-block;
+    margin: 25px 0;
+}
+.s-cards .row:nth-child(2) .s-desc p{float: left;}
+/* SERVICE CARDS END */
+
+/* INDUSTRY  */
+section.indsutry{
+    background-image: url(../images/industry-bg.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.in-txt h6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.in-txt h1{
+    font-weight: 200;
+    margin: 50px 0;
+}
+.in-txt a {
+    font-size: 16px;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #fff;
+    display: inline-block;
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+.in-txt a:hover{
+    background-color: #000;
+    color: #fff;
+}
+.indsutry-cards {
+    padding: 100px 0 0;
+}
+.post-img img{
+    width: 100%;
+}
+.post-txt {
+    color: #fff;
+    padding: 40px 0;
+}
+.post-txt h6 {
+    margin-bottom: 20px;
+}
+.post-txt h5 {
+    font-size: 24px;
+    font-weight: 400;
+}
+/* INDUSTRY END */
+
+/* TESTIMONIALS  */
+section.testimonials{
+    padding: 100px 0;
+}
+.testimonials h3 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #323e48;
+}
+.testimonial-slider h4 {
+    font-size: 19px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+.testimonial-slider h6{
+    font-size: 19px;
+    color: #999999;
+    font-weight: 800;
+}
+.quote i {
+    font-size: 60px;
+    font-style: italic;
+    color: #04bbee;
+}
+.testimonial-slider .slick-dots li button {
+    background: #cccccc;
+    border-radius: 0;
+    height: 5px;
+    width: 285px;
+    padding: 0;
+}
+.testimonial-slider .slick-dots .slick-active button{background: #04bbee;}
+.testimonial-slider .slick-dots {
+    bottom: -55px;
+    text-align: left;
+    left: -410px;
+    width: 100%;
+    display: flex;
+}
+.testimonial-slider .slick-dots li{width: initial;height: 0;}
+.testimonial-slider .slick-dots li button:before{content: none;}
+/* TESTIMONIALS END */
+
+/* PARTNERS  */
+.p-head h2 {
+    line-height: 50px;
+    color: #323e48;
+    font-weight: 400;
+    text-transform: unset;
+    font-size: 28px;
+}
+.partner-logo{
+    padding: 50px 0;
+}
+.p-logo {
+    background-color: #fff;
+    height: 270px;
+    width: 270px;
+    display: inline-block;
+    text-align: center;
+    line-height: 270px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px 3px rgb(0 0 0 / 30%);
+    transition: 0.5s all;
+}
+.p-logo:hover{background-color: #cccccc;}
+/* PARTNERS END  */
+
+/* LETS CONNECT  */
+.connect {
+    background-color: #101820;
+    width: 100%;
+    padding: 200px 0 100px;
+    margin-top: -150px;
+    position: relative;
+    z-index: -1;
+}
+.connect-txt h4 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 50px;
+}
+.connect-txt a {
+    color: #fff;
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #fff;
+    height: 50px;
+    width: 170px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.connect-txt a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.connect-info h6 {
+    color: #04bbee;
+    font-size: 16px;
+    font-weight: 800;
+}
+.connect-info h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 28px;
+}
+.connect-info a {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.connect-info .form-control {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 0;
+    margin-top: 40px;
+    
+}
+.connect-info .form-control::placeholder{
+    font-size: 14px;
+    color: #fff;
+}
+.connect-info .form-control:focus{
+    border-color: #fff;
+    outline: 0;
+    box-shadow:none;
+    color: #fff;
+}
+.connect-info .btn-outline-secondary {
+    color: #ffff;
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    padding: 10px 15px 0px;
+    border-bottom: 1px solid #fff;
+}
+.connect .row{
+    position: relative;
+    z-index: 1;
+}
+.connect .service-head {
+    position: absolute;
+    bottom: -180px;
+    left: -250px;
+    opacity: 0.1;
+    z-index: -1;
+}
+.connect  .service-head h4 {
+    font-size: 350px;
+    color: #cccccc;
+    font-weight: 900;
+}
+/* LETS CONNECT end */
+
+/* FOOTER  */
+footer{
+    padding:100px 0 50px;
+}
+.f-logo img {
+    max-width: 200px;
+}
+.f-socails a {
+    color: #5b6770;
+    margin-right: 25px;
+}
+.f-socails a:hover{color: #04bbee;}
+.f-copy p {
+    margin: 40px 0;
+    font-weight: 600;
+    line-height: 40px;
+}
+/* FOOTER END */
+
+@media only screen and (min-width: 1200px) and (max-width: 1365px){
+    h1 {
+        font-size: 63px;
+        color: #fff;
+        font-weight: 800;
+    }
+    h2 {
+        font-size: 26px;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        max-width: 90%;
+    }
+    .steps .step-txt h1 {
+        color: #04bbee;
+        margin-bottom: 40px;
+        line-height: 60px;
+        font-size: 70px;
+    }
+    .step-txt .service-head {
+        left: -30px;
+    }
+    .step-txt .service-head h4 {
+        font-size: 260px;
+    }
+    .s-desc h3 {
+        font-size: 42px;
+    }
+    .s-desc p {
+        max-width: 80%;
+    }
+    section.s-cards {
+        padding: 70px 0 0;
+    }
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){}
+@media only screen and (min-width: 768px) and (max-width: 991px){}
+@media only screen and (min-width: 520px) and (max-width: 767px){}
+@media only screen and (min-width: 300px) and (max-width: 519px){
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .b-logo img {
+        max-width: 180px;
+    }
+    .banner {
+        min-height: 670px;
+    }
+    .b-scroll a h6 {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    header .navbar-brand img {
+        max-width: 150px;
+    }
+    .navbar-toggler {
+        border: 2px solid #000;
+    }
+    .navbar-toggler-icon::before {
+        content: "\f0c9";
+        font-family: fontawesome;
+        line-height: 30px;
+    font-size: 35px;
+    }
+    .slogan {
+        padding: 50px 0;
+    }
+    .slogan h1 {
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .slogan p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .slick-dotted.slick-slider {
+        margin: 30px 0;
+    }
+    .steps {
+        padding: 50px 0 0;
+    }
+    .steps .step-txt h1 {
+        color: #04bbee;
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+    .steps .step-txt h5 {
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .step-txt p {
+        margin-top: 10px;
+    }
+    section.s-cards {
+        padding:0;
+    }  
+    .step-txt .service-head h4 {
+        font-size: 78px;
+    }
+    .step-txt .service-head {
+        position: relative;
+        left: 0;
+        bottom: 0;
+    }  
+    .s-desc {
+        text-align:left;
+        padding: 0;
+        margin-bottom:50px;
+            margin-top: 50px;  
+    }
+    .s-desc h3 {
+        font-size: 35px;
+    }
+    .s-desc p {
+        max-width: 100%;
+        float: initial;
+        font-size: 14px;
+        display: inline-block;
+    }
+    .s-cards .row:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .post-txt h5 {
+        font-size: 20px;
+    }
+    section.testimonials {
+        padding: 50px 0;
+    }
+    .testimonials h3 {
+        font-size: 35px;
+
+    }
+    .testimonials h3 br{display: none;}
+    .testimonial-slider h4 {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .testimonial-slider .slick-dots li button {
+        width: 74px;
+    }
+    .testimonial-slider .slick-dots{left: 0;}
+    .p-head h2 {
+        line-height: 28px;
+        font-size: 15px;
+        max-width: 100%;
+    }
+    .p-logo {
+        height: 150px;
+        width: 100%;
+        line-height: 150px;
+        margin-bottom: 20px;
+    }
+    .connect-txt h4 {
+        font-size: 28px;
+        line-height: 20px;
+    }
+    .connect {
+        padding: 150px 0 100px;
+    }
+    .connect-txt {
+        margin-bottom: 50px;
+    }
+    .connect .service-head {
+        bottom: -100px;
+        left: 8px;
+    }
+    .connect .service-head h4 {
+        font-size: 83px;
+    }
+    footer{
+        padding: 50px 0;
+    }
+    .f-socails a {
+        margin-right: 22px;
+    }
+    .f-copy p {
+        margin: 20px 0;
+        line-height: 24px;
+        font-size: 14px;
+    }
+}
